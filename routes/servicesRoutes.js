@@ -12,12 +12,12 @@ router.route("/").post((req, res)=>{
     res.status(200).json({message: "Create Services"})
 });
 
-router.route("/").get((req, res)=>{
-    res.status(200).json({message: "hello world"})
+router.route("/details").get((req, res)=>{
+    res.status(200).json({message: "GET for details"})
 });
 
-router.route("/").get((req, res)=>{
-    res.status(200).json({message: "hello world"})
+router.route("/details").post((req, res)=>{
+    res.status(200).json({message: "POST for details"})
 });
 
 module.exports = router
